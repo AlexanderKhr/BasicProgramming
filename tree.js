@@ -12,7 +12,7 @@ User write the quantity of string and script will
 show the tree )
 */
 
-var _zv='*'; _sp='^'; // Chars for printing
+var _zv='^'; _sp='&nbsp'; // Chars for printing!!!!!!!!
 var _q=0; // calculating of chars in string
 
 function br (){ // <br>

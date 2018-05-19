@@ -8,6 +8,10 @@ function br (){
 	document.write('<br>');
 }
 
+function cl(name){
+	console.log(name);
+}
+
 /*
 var a = 4;
 document.write(a + "<br>");
@@ -1219,6 +1223,424 @@ alert(n.toFixed(2));
 alert(n.toFixed(3));
 alert(n.toFixed(5));
 */
+
+/*
+var a=0.1+0.2
+dw(a);
+br();
+dw(a.toFixed(1));
+*/
+
+/*
+var x=prompt("Entern any number","-3.14");
+if (isNaN(x)){ //isNaN
+	alert("Tnis is Not A Number");
+}else{
+	alert("It's not a number!!");
+}
+*/
+
+/*
+var x=+prompt("Enter 1st number bettwen 0 and 1");
+var y=+prompt("Enter 2nd number bettwen 0 and 1");
+
+calc(x,y);
+
+function calc(x,y){
+if (((x>0&&x<1))&&((y>0&&y<1))){
+var result=x+y;
+dw("x = "+x+" "+"y = "+y);
+br();
+dw("x + y = "+result.toFixed(1));
+}else{
+	alert("You write wrong numbers");
+}}
+
+*/
+
+
+/* ARRAY */
+
+/*
+//        0   1   2   3
+var arr=['1','2','3','9'];
+alert(arr[2]); //3
+alert(arr[0]); //1
+
+var ar=[];
+console.log(ar);
+*/
+
+/*
+var numbers=['Zero','One','Two'];
+alert(numbers[0]);// Zero
+alert(numbers[1]);// One
+alert(numbers[2]);// Two
+*/
+
+/*
+var numbers=['Zero','One','Two'];
+
+numbers[2]='Not two';
+alert(numbers);//Zero,One,Not two
+numbers[3]='Tree';
+alert(numbers); //Zero,One,Not two,Tree
+*/
+/*
+var arr=[];
+var x='name';
+arr[0]=x;
+arr[1]='age'; // arr=['name','age']
+alert(arr.length);
+*/
+/*
+var numbers=['Zero','One','Two'];
+numbers.pop(); // Delete last element of array (Two)
+alert(numbers); //Zero,One
+numbers.push('New Two'); // Add last element of array (New Two)
+alert(numbers); //Zero,One,New Two
+numbers.shift(); // Delete 0 element of array (Zero)
+alert(numbers); //One,New Two
+numbers.unshift('New Zero'); // Add 0 element of array (Zero)
+alert(numbers); //New Zero,One,New Two
+alert(numbers.length); //3
+alert(typeof numbers);
+*/
+
+/*
+var arr=[1,2,3,4,5];
+for(var i=0;i<arr.length;i++){
+	dw(arr[i]+'<br>');
+}
+*/
+
+/*
+var arr=[2,3,4,5];
+var mult=1;
+for(var i=0;i<arr.length;i++){
+	mult*=arr[i];
+}
+dw(mult);
+*/
+
+/*
+var arr= [10,9,8,7,6,5,4,3,2,1,0];
+//for(var i=arr.length; i>=0; i--)
+for(var i=0;i<arr.length;i++){
+	if(arr[i]%2==0){
+		dw(arr[i]);
+		br();
+	}
+}
+*/
+
+/*
+var books=['JavaScript','PHP','HTML','CSS'];
+dw('<ol>');
+for (var i=0; i<books.length; i++){
+	dw('<li>'+books[i]+'</li>')
+}
+dw('</ol>');
+*/
+
+/*
+var books=['JavaScript','PHP','HTML','CSS'];
+for (var i=0; i<books.length; i++){
+	dw(i+1+'.'+books[i]+'<br>');
+}
+
+br();
+books.length=2;
+for (var i=0; i<books.length; i++){
+	dw(i+1+'.'+books[i]+'<br>');
+}
+*/
+
+/*
+var array1D =[1,2,3];
+var array2D = [
+[1,2,3], // element 0
+[4,5,6], // element 1
+[7,8,9]  // element 2
+];
+
+dw(array1D);
+br();
+dw(array2D);
+*/
+
+/*
+array2D[0]=[1,2,3];
+array2D[2]=[7,8,9];
+
+array[0][0];
+array[2][2];
+*/
+
+/*
+var color=['Yellow','Blue'];
+alert(color);
+color.push('Red');
+alert(color);
+color[color.length-2]='Black';
+alert(color);
+//delete color[0];
+color.shift();
+alert(color[0]);
+color.unshift('Orange','Green');
+alert(color);
+*/
+
+/*
+var number=['Zero','JavaScript','PHP','HTML','CSS','Yellow','Blue'];
+dw(number[Math.floor(Math.random()*number.length)]);
+*/
+
+/*
+var books=['JavaScript','PHP','HTML','CSS'];
+var _book=prompt('Enter name of book : ');
+check(_book);
+
+
+
+function check(x){
+for(var i=0; i<books.length; i++){
+	dw(books[i]+'<br>');
+	}
+}
+*/
+
+/*
+var number=['Zero','JavaScript','PHP','HTML','CSS','Yellow','Blue'];
+var x=prompt('Enter name :');
+
+
+function find(array, value){
+	if(array.indexOf){
+		return array.indexOf(value)+1; 
+}
+	for (var i=0;i<array.length; i++){
+		if (array[i]===value)
+			return i=i+1;
+	else{
+	return -1;
+}
+}
+*/
+
+/*
+var a=[];
+
+for(var i=0;i<5;i++){
+	var x=prompt('Enter NAME :');
+	a.push(x);
+}
+alert('Yuor create as follow :'+a);
+*/
+/*
+var str=['Hello, ','world ','!','1','2','3'];
+alert(str);
+alert(str[0]+str[1]+str[2]);
+var str2=str[0]+str[1]+str[2];
+alert(str2);
+var str10=[];
+var str3=str10.concat(str[3],str[4],str[5]);
+alert(str3);
+var str4=str.join('+');
+alert(str4);
+*/
+
+/*
+var obj={
+	key1:1,
+	key2:2
+};
+
+var user1={
+	name:'Vasya',
+	email:'vasiya@ukr.net'
+}
+ var arr=[obj,user1];
+/*
+var arr=[
+{
+	name:'vasya',
+	age:21
+},
+{
+	name:'patya',
+	age:36
+}
+
+]
+*/
+/*
+for(var i=0;i<arr.length;i++){
+	console.log(arr[i]);
+	for(var key in arr[i]){
+		console.log(key); //Swow the 'key' of object 
+		console.log(arr[i][key]); // Show value of key
+	}
+}
+
+*/
+
+/*
+var person={
+	name:'Fedor',
+	age:56,
+	language: 'en'
+};
+console.log(person.language);
+console.log(person);
+*/
+
+/*
+var arr={
+	'ru':['Goluboi','Krastnii','Zeleniy'],
+	'en':['Blue','Red','Green']
+}
+alert(arr['ru']);
+console.log(arr);
+console.log(arr['en']);
+console.log(arr['en'][0]);
+console.log(arr['en'][1]);
+console.log(arr['ru'][1]);
+*/
+
+/*
+var arr=['Hello ! ','How','are ','you ?'];
+dw(arr[0]+arr[1]+', '+arr[2]+arr[3]);
+*/
+
+
+var arr={
+	'ru':['Понедельник','Вторник','Среда','Четверг','Пятница','Суббота','Воскресенье'],
+	'en':['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday']
+};
+//cl(arr['ru']);
+
+
+var x=prompt('Введите день недели :');
+
+for(var i=0;i<arr['ru'].length;i++){
+	if(arr['ru'][i]===x){
+	alert("It well be :"+arr['en'][i]);
+}
+	
+}
+
+
+
+/* foreach */
+
+//var arr1=[1,2,3];
+//var arr2=[];
+/*
+var x='*';
+for(var i=0;i<arr1.length;i++){
+	arr2[i]=arr1[i]+x
+}
+//cl(arr2);
+*/
+
+
+
+/*
+arr1.forEach(
+	function(item,index,array){
+		array[index]=item+'1';
+	}
+	);
+console.log('Array :',arr1);
+
+//item - arr[i]
+// index - i
+// arr - array
+*/
+/*
+var arr1=[1,2,3];
+arr1.forEach(
+	function(item,index,array){
+		console.log(item);
+	});
+*/
+
+/*
+var arr1=[1,2,3];
+const items = ['item1','item2','item3'];
+const copy=[];
+items[0]='const';
+
+for (var i=0; i<items.length;i++){
+	copy.push(items[i]);
+	console.log('for',items[i]);
+}
+console.log(copy);
+*/
+
+/*
+console.log(items);
+items.push(arr1);
+console.log(items);
+*/
+
+/*
+const items2 = ['item1','item2','item3'];
+const copy2=[];
+items2.forEach(function(item){
+	copy2.push(item);
+	console.log('forEach',item);
+});
+cl(copy2);
+*/
+
+/*
+var words=['One', 'Two','Three','Four'];
+
+words.forEach(function(word){
+	if(word==='One'){
+		words.shift();
+	}
+});
+console.log('words',words);
+*/
+
+/*
+var numbersArray=[
+{num1:1, num2:2},
+{num3:3, num4:4}];
+*/
+/*
+console.log(numbersArray);
+
+for(var i=0;i<numbersArray.length;i++){
+	if (i===numbersArray.length){
+		break;
+	}
+	for(var key in numbersArray[i]){
+		if(key==='num3'&&numbersArray[i][key]===3){
+			console.log('GOOD'+' '+key+' '+numbersArray[i][key]);
+			
+		}
+	}}
+*/
+/*
+for(var i=0;i<numbersArray.length;i++){
+	//if (i===numbersArray.length){
+	//	break;
+	//}
+	if(numbersArray[i].num3===3){
+		console.log('num3 :',numbersArray[i].num3);
+	}else{
+		console.log('doesn\'t exist');
+	}
+	}
+*/	
+
+
+
+
 
 
 
