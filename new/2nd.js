@@ -1,0 +1,5 @@
+function useLibFn(){
+    libFn();
+}
+
+useLibFn();
